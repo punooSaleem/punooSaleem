@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+     rel="stylesheet" 
+     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous">
+      <!-- This is  CSS Code -->
+      <style>
+        body{
+            background-color: aqua;
+        }
+        #first1{
+            background-color: greenyellow;
+          
+            padding: 15px;
+        }
+        #first1 :hover{
+          color: brown;
+        }
+        h1{
+            background-color: aqua;
+            font-family: 'Times New Roman', Times, serif;
+            float: left;
+        }
+        .container{
+            background-color: greenyellow;
+            margin: 53px;
+            margin-left: 330px;
+            padding-left: 20px;
+            width: 350px;
+            /* background-image: url(https://media.istockphoto.com/id/2152025654/photo/businessman-using-calculator-bookkeeping-payroll-and-budget-tax-business-document-finance.jpg?s=1024x1024&w=is&k=20&c=0huwSFQ3PQsd8vN4tAgiru6Oa3rlW29MKqfnreOMNYo=); */
+        }
+        
+         
+         .container-fluidddd{
+            
+            margin: 53px;
+            margin-left: 800px;
+            padding-left: 20px;
+            width: 350px;
+        }
+        .col{
+           
+            margin: 53px;
+            margin-left: 3px;
+            padding-left: 20px;
+            width: 350px;
+
+        }
+        .col1{
+           margin: 83px;
+            margin-left: 360px;
+            padding-left: 20px;
+            width: 350px;
+            margin-top: -620px;
+
+
+        }
+        .col1-first{
+           margin: 83px;
+            margin-left: 710px;
+            padding-left: 20px;
+            width: 350px;
+            margin-top: -627px;
+
+
+        }
+        h3{
+          color: blue;
+        }
+         #second{
+            color: red;
+             border-radius: 33px;
+              margin-left: 150px; 
+        } 
+        #second{ 
+             border-radius: 33px; 
+            
+             margin-left: 150px; 
+             margin-top: 15px; 
+         } 
+         h2{
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+         }
+         
+        #input1{
+            margin-left: 50px;
+        }
+        #third{
+            margin-left: 300px;
+        }
+    
+
+      </style>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" id="first1" id="nav-item">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="About.html">About</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" href="Members.html">Members</a>
+        </li>
+        <li class="nav-item" >
+            <a class="nav-link" href="Contact us.html">Contact us</a>
+        </li>
+    </div>
+  </div>
+</nav>
+<marquee behavior="marquee" direction="left" style="color: red ">
+        <h1> Web based calculator</h1>
+    </marquee>
+
+    <div class="container">  
+    <h2>Calculation</h2>
+        <div id="input1">
+        <input type="text" id="num1" placeholder="Enter ist Number">
+        </div><br>
+        <div id="input1">
+        <input type="text" id="num2" placeholder="Enter 2nd Number">
+        </div><br>
+        
+        
+        <div id="second">
+
+        <button id="first" onclick="add()">+</button>
+        <button id="first" onclick="sub()">-</button>
+        <button id="first" onclick="mul()">*</button>
+        <button id="first" onclick="divi()">/</button>
+
+         </div>
+       
+        <p id="result"></p>
+        </div>
+        <!-- HERE WE HAVE JAVA SCRIPT CODE -->
+    <script>
+        function add()
+        {
+            let a=parseInt(document.getElementById("num1").value);
+            let b=parseInt(document.getElementById("num2").value);
+            document.getElementById("result").innerText=a+"+"+b+"="+(a+b);
+        }
+        function sub()
+        {
+            let a=parseInt(document.getElementById("num1").value);
+            let b=parseInt(document.getElementById("num2").value);
+            document.getElementById("result").innerText=a+"-"+b+"="+(a-b);
+        }
+        function mul()
+        {
+            let a=parseInt(document.getElementById("num1").value);
+            let b=parseInt(document.getElementById("num2").value);
+            document.getElementById("result").innerText=a+"*"+b+"="+(a*b);
+        }
+        function divi()
+        {
+            let a=parseInt(document.getElementById("num1").value);
+            let b=parseInt(document.getElementById("num2").value);
+            document.getElementById("result").innerText=a+"/"+b+"="+(a/b);
+        }
+    </script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+    crossorigin="anonymous">
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" 
+crossorigin="anonymous">
+</script>
+ 
+    
+   
+</body>
+</html>
